@@ -1,0 +1,12 @@
+name: Triage CI
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo triage status
+        run: echo "Triage workflow executed successfully."
